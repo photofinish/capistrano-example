@@ -4,6 +4,8 @@ lock '3.8.2'
 set :application, 'capistrano-example'
 set :repo_url, 'git@github.com:photofinish/capistrano-example.git'
 
+set :rbenv_ruby, File.read('.ruby-version').strip
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
